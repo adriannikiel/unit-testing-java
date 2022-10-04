@@ -16,7 +16,7 @@ public class AccountTest {
     }
 
     @Test
-    public void accountShouldBeActiveAfterCreation() {
+    public void accountShouldBeActiveAfterActivation() {
         //given
         Account newAccount = new Account();
 
