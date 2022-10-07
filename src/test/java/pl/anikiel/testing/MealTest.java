@@ -41,7 +41,7 @@ class MealTest {
 
         //then
         assertNotSame(meal1, meal2);
-        
+
         assertThat(meal1).isNotSameAs(meal2);
     }
 
@@ -53,5 +53,18 @@ class MealTest {
 
         //then
         assertEquals(meal1, meal2, "Checking if two meals are equal");
+    }
+
+    @Test
+    void exceptionShouldBeThrownIfDiscountIsHigherThanThePrice() {
+        //given
+        Meal meal = new Meal(8, "Soup");
+
+        //when
+        //then
+        assertThrows(IllegalArgumentException.class, () -> {
+            meal.getDiscountedPrice(40);
+        });
+
     }
 }
