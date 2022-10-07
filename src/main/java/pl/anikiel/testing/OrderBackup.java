@@ -11,8 +11,8 @@ public class OrderBackup {
 
     void createFile() throws FileNotFoundException {
         File file = new File("orderBackup.txt");
-        FileOutputStream fileInputStream = new FileOutputStream(file);
-        OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileInputStream);
+        FileOutputStream fileOutputStream = new FileOutputStream(file);
+        OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream);
 
         writer = new BufferedWriter(outputStreamWriter);
     }
