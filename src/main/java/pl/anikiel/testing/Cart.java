@@ -3,14 +3,14 @@ package pl.anikiel.testing;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Card {
+public class Cart {
     private List<Order> orders = new ArrayList<>();
 
-    void addOrderToCard(Order order) {
+    void addOrderToCart(Order order) {
         this.orders.add(order);
     }
 
-    void clearCard() {
+    void clearCart() {
         this.orders.clear();
     }
 
@@ -19,9 +19,9 @@ public class Card {
             Meal meal = new Meal(i % 10, "Hamburger nr " + i);
             Order order = new Order();
             order.addMealToOrder(meal);
-            addOrderToCard(order);
+            addOrderToCart(order);
         }
-        System.out.println("Card size: " + orders.size());
-        clearCard();
+        System.out.println("Cart size: " + orders.size());
+        clearCart();
     }
 }
