@@ -1,9 +1,11 @@
 package pl.anikiel.testing;
 
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assumptions.assumingThat;
 
 public class AccountTest {
 
@@ -27,9 +29,9 @@ public class AccountTest {
         newAccount.activate();
 
         //then
-       assertTrue(newAccount.isActive(), "'active' is set to true on activated account");
+        assertTrue(newAccount.isActive(), "'active' is set to true on activated account");
 
-       assertThat(newAccount.isActive()).isTrue();
+        assertThat(newAccount.isActive()).isTrue();
     }
 
     @Test
@@ -60,5 +62,19 @@ public class AccountTest {
         assertNotNull(defaultDeliveryAddress);
 
         assertThat(defaultDeliveryAddress).isNotNull();
+    }
+
+    @RepeatedTest(5)
+    void newAccountWithNotNullAddressShouldBeActive() {
+        //given
+        Address address = new Address("Puławska", "46/6");
+
+        //when
+        Account account = new Account(address);
+
+        //then
+        assumingThat(address != null, () -> {
+           assertTrue(account.isActive());
+        });
     }
 }
