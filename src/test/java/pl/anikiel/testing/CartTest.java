@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 
 import java.time.Duration;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertTimeout;
 
 @DisplayName("Test cases for Cart")
@@ -21,4 +23,23 @@ class CartTest {
         //then
         assertTimeout(Duration.ofMillis(100), cart::simulateLargeOrder);
     }
+
+    @Test
+    void cartShouldNotBeEmptyAfterAddingOrderToCart() {
+        //given
+        Order order = new Order();
+        Cart cart = new Cart();
+
+        //when
+        cart.addOrderToCart(order);
+
+        //then
+        assertAll("This is a group assertions for cart",
+                () -> assertThat(cart.getOrders()).isNotNull(),
+                () -> assertThat(cart.getOrders()).hasSize(1),
+                () -> assertThat(cart.getOrders()).isNotEmpty()
+        );
+
+    }
+
 }
