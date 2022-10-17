@@ -61,7 +61,6 @@ public class Unit {
         this.cargo.add(cargo);
 
         this.currentCargoWeight = calculateCargoWeight();
-
     }
 
     void unloadCargo(Cargo cargo) {
@@ -85,5 +84,9 @@ public class Unit {
 
     int getLoad() {
         return this.currentCargoWeight;
+    }
+
+    public int getMaxFuel() {
+        return this.maxFuel;
     }
 }
