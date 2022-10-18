@@ -43,4 +43,8 @@ public class Account {
             throw new IllegalArgumentException("Wrong email format");
         }
     }
+
+    public String getEmail() {
+        return this.email;
+    }
 }
