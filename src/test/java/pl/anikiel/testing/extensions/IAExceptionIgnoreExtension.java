@@ -1,4 +1,4 @@
-package pl.anikiel.testing;
+package pl.anikiel.testing.extensions;
 
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.TestExecutionExceptionHandler;

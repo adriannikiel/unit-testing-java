@@ -1,4 +1,6 @@
-package pl.anikiel.testing;
+package pl.anikiel.testing.order;
+
+import pl.anikiel.testing.Meal;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +24,7 @@ public class Order {
         this.meals.clear();
     }
 
-    int totalPrice() {
+    public int totalPrice() {
 
         int sum = meals.stream().mapToInt(Meal::getPrice).sum();
 

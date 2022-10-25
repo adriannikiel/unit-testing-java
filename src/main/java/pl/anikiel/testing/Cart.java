@@ -1,12 +1,14 @@
 package pl.anikiel.testing;
 
+import pl.anikiel.testing.order.Order;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Cart {
     private List<Order> orders = new ArrayList<>();
 
-    public List<Order> getOrders() {
+    List<Order> getOrders() {
         return orders;
     }
 

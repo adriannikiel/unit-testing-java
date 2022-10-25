@@ -1,4 +1,4 @@
-package pl.anikiel.testing;
+package pl.anikiel.testing.account;
 
 public class Address {
     private String street;

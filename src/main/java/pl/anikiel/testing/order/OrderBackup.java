@@ -1,11 +1,11 @@
-package pl.anikiel.testing;
+package pl.anikiel.testing.order;
 
 import java.io.*;
 
 public class OrderBackup {
     private Writer writer;
 
-    public Writer getWriter() {
+    Writer getWriter() {
         return writer;
     }
 
@@ -17,7 +17,7 @@ public class OrderBackup {
         writer = new BufferedWriter(outputStreamWriter);
     }
 
-    void backupOrder(Order order) throws IOException {
+    public void backupOrder(Order order) throws IOException {
 
         if (writer == null) {
             throw new IOException("Backup file not created");

@@ -2,6 +2,7 @@ package pl.anikiel.testing;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import pl.anikiel.testing.order.Order;
 
 import java.time.Duration;
 

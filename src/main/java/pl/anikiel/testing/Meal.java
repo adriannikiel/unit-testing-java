@@ -26,7 +26,7 @@ public class Meal {
         return this.price;
     }
 
-    public int getQuantity() {
+    int getQuantity() {
         return quantity;
     }
 

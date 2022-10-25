@@ -1,4 +1,4 @@
-package pl.anikiel.testing;
+package pl.anikiel.testing.extensions;
 
 import org.junit.jupiter.api.extension.AfterEachCallback;
 import org.junit.jupiter.api.extension.BeforeEachCallback;
