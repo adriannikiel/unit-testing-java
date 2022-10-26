@@ -1,8 +1,6 @@
-package pl.anikiel.testing;
+package pl.anikiel.testing.order;
 
 import org.junit.jupiter.api.Test;
-import pl.anikiel.testing.order.Order;
-import pl.anikiel.testing.order.OrderBackup;
 
 import java.io.IOException;
 
