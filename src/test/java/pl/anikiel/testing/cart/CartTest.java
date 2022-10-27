@@ -1,7 +1,8 @@
-package pl.anikiel.testing;
+package pl.anikiel.testing.cart;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import pl.anikiel.testing.cart.Cart;
 import pl.anikiel.testing.order.Order;
 
 import java.time.Duration;
