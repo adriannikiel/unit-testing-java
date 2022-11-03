@@ -9,10 +9,14 @@ public class AccountRepositoryStub implements AccountRepository {
         Account account1 = new Account(address1);
 
         Account account2 = new Account();
-
         Address address3 = new Address("Piekarska", "12b");
         Account account3 = new Account(address3);
 
         return List.of(account1, account2, account3);
+    }
+
+    @Override
+    public List<String> getByName(String name) {
+        return null;
     }
 }
