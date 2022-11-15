@@ -1,7 +1,7 @@
 package pl.anikiel.testing.order;
 
 import org.junit.jupiter.api.*;
-import pl.anikiel.testing.Meal;
+import pl.anikiel.testing.meal.Meal;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

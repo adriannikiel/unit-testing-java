@@ -1,4 +1,4 @@
-package pl.anikiel.testing;
+package pl.anikiel.testing.meal;
 
 import java.util.Objects;
 
@@ -38,6 +38,10 @@ public class Meal {
             throw new IllegalArgumentException("Discount cannot be higher than the price!");
         }
         return this.price - discount;
+    }
+
+    public String getName() {
+        return name;
     }
 
     @Override

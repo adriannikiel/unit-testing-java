@@ -4,7 +4,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import pl.anikiel.testing.Meal;
+import pl.anikiel.testing.meal.Meal;
 import pl.anikiel.testing.extensions.BeforeAfterExtension;
 
 import java.util.List;

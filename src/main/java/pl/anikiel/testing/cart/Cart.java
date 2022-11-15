@@ -1,6 +1,6 @@
 package pl.anikiel.testing.cart;
 
-import pl.anikiel.testing.Meal;
+import pl.anikiel.testing.meal.Meal;
 import pl.anikiel.testing.order.Order;
 
 import java.util.ArrayList;
